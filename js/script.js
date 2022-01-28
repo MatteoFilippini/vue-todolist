@@ -4,6 +4,11 @@ Vue.config.devtools = true;
 
 const app = new Vue({
     el: '#root',
-    data: {},
+    data: {
+        list: [
+            { text: 'Fagioli', done: 'true' },
+            { text: 'Carote', done: 'false' }
+        ]
+    },
     methods: {}
 });
