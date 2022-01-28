@@ -7,7 +7,8 @@ const app = new Vue({
     data: {
         list: [
             { text: 'Fagioli', done: 'true' },
-            { text: 'Carote', done: 'false' }
+            { text: 'Carote', done: 'false' },
+            { text: 'Piselli', done: 'false' },
         ]
     },
     methods: {}
