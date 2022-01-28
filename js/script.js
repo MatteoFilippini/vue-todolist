@@ -6,9 +6,9 @@ const app = new Vue({
     el: '#root',
     data: {
         list: [
-            { text: 'Fagioli', done: 'true' },
-            { text: 'Carote', done: 'false' },
-            { text: 'Piselli', done: 'false' },
+            { text: 'Fagioli', done: true },
+            { text: 'Carote', done: false },
+            { text: 'Piselli', done: false },
         ]
     },
     methods: {}
