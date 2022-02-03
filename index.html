@@ -25,7 +25,10 @@
                 <button class="btn btn-outline-secondary" type="button" @click="addTask()">AGGIUNGI</button>
             </div>
             <!-- LISTA -->
+            <h3 class="text-center" :class="list.length ? 'd-none' : 'd-block'">AGGIUNGI I PRODOTTI CHE VUOI
+                COMPRARE!</h3>
             <div class="input-group mb-1" v-for="(todo,index) in list">
+                <!-- <h3 class="text-center">AGGIUNGI I PRODOTTI CHE VUOI COMPRARE!</h3> -->
                 <i class="far me-2 lh-lg " role="button" :class="list[index].done ? 'fa-check-square' : 'fa-square'"
                     @click="deselectTask(index)">
                 </i>
