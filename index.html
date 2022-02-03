@@ -26,7 +26,8 @@
             </div>
             <!-- LISTA -->
             <div class="input-group mb-1" v-for="(todo,index) in list">
-                <i class="far me-2 lh-lg " role="button" :class="list[index].done ? 'fa-check-square' : 'fa-square'">
+                <i class="far me-2 lh-lg " role="button" :class="list[index].done ? 'fa-check-square' : 'fa-square'"
+                    @click="deselectTask(index)">
                 </i>
                 <input type="text" class="form-control" v-model='list[index].text' disabled
                     :class="{done: list[index].done}">

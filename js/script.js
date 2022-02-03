@@ -22,9 +22,13 @@ const app = new Vue({
             this.list.push(newTask);
             this.newTextTask = '';
         },
-        // ELIMINARE TASK
+        // ELIMINA TASK
         deleteTask(index) {
             this.list.splice(index, 1);
+        },
+        // DESELEZIONA TASJ
+        deselectTask(index) {
+            this.list[index].done = !this.list[index].done
         }
     }
 });
