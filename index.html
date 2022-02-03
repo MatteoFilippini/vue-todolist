@@ -30,7 +30,7 @@
                 </i>
                 <input type="text" class="form-control" v-model='list[index].text' disabled
                     :class="{done: list[index].done}">
-                <button class="btn btn-outline-secondary " type="button">ELIMINA</button>
+                <button class="btn btn-outline-secondary " type="button" @click="deleteTask(index)">ELIMINA</button>
             </div>
         </main>
     </div>

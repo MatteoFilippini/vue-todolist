@@ -21,6 +21,10 @@ const app = new Vue({
             }
             this.list.push(newTask);
             this.newTextTask = '';
+        },
+        // ELIMINARE TASK
+        deleteTask(index) {
+            this.list.splice(index, 1);
         }
     }
 });
